@@ -17,9 +17,3 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: CloudFormationCreateOrUpdateStack@1
-  inputs:
-    regionName: 'eu-west-1'
-    stackName: 'test-stack'
-    templateSource: 'url'
-    templateUrl: 'https://github.com/nvgoncloud/AWSDemo/blob/main/akamai_sg.json'
